@@ -1,1 +1,185 @@
 /* место для вашего кода */
+.header {
+    display:grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50pxs;
+}
+
+/*Стили для меню*/
+.header__menu {
+    justify-self: start;
+  }
+
+  .header__links-list {
+    display: flex;      /*расположени по Горизонтали*/
+    gap: 32px;          /*Расстояние между пунктов*/
+    llist-style-position: inside; /*Маркеры внутри списка*/
+    margin: 0;          /*Убираем внешние отступы*/
+    padding-left: 0;    /*Используем для сброса стандартных отступов*/ 
+  }
+
+  .header__links-list-item {
+    list-style-type: circle; /* Круговые маркеры */
+    padding-left: 0.5em; /* Отступ для маркеров */
+    position: relative;
+    left: 1em; /* Смещение для выравнивания */
+  }
+
+  .header__links-list-item_no-bullit {
+    list-style-type: none; /* Убираем маркер */
+    left: 0; /* Сбрасываем смещение */
+    padding-left: 0;
+  }
+
+  .header__link_active {
+    text-decoration: underline;
+  }
+
+.header links-list-item {
+
+}
+
+.header__links-list-item {
+
+}
+
+.header__logo {
+    display: block;
+    width: 148px;
+  }
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.35;
+    justify-self: end;
+    text-align: right;
+  }
+
+.address a {
+    display: block;
+  }
+
+  /* Блок cover */
+  .cover {
+    position: relative;
+    padding: 165px 50px 50px;
+    background-image: url('../images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .title-frame {
+    width: 1000px;
+    height: 385px;
+    border: 1px solid #fff; /* Белая рамка */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; /* Чтобы рамка была поверх overlay */
+    margin: 0 auto; /* Центрирование по горизонтали */
+  }
+  
+  /* Обновленные стили для заголовка */
+  .cover__title {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+  }
+   
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .cover__title {
+    position: relative;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+    .about__text {
+    position: relative;
+    font-family: "raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color:black;
+  }
+
+  .about__text p:first-of-type {
+    margin-bottom: 24px;
+  }
+
+  .about__column p {
+    width: 100%;
+  }
+
+  .aligned-text {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .aligned-text_center {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .aligned-text_right {
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  .letter-spacing-extended {
+    letter-spacing: 30px;
+  }
+  
+  .no-letter-spacing {
+    letter-spacing: 0;
+  }
+  
+  .cover__description {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px;
+    margin-top: 135px;
+    z-index: 1;
+  }
+  
+  .cover__description-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 18px;
+  }
+  
+  .bet-button {
+    border: 1px solid #fff;
+    padding: 12px 32px;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
