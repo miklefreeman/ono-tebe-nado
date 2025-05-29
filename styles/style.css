@@ -13,12 +13,20 @@ main {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 51px 89px;
+  box-sizing: border-box;
+  padding: 92px 49px 92px 51px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 5px;
 }
 
 .header__links-list {
   display: flex;
   gap: 32px;
+  list-style: circle;
+  padding-top: 39px;
+  padding-bottom: 45px;
 }
 
 .header__links-list-item {
@@ -44,14 +52,14 @@ main {
 }
 
 .header__logo {
-  display: block;
-  justify-self: center;
-  align-self: center;
-  width: 140px;
+    display: block;
+    width: 137px;
+    height: 105px;
 }
 
-.header__logo-image {
-  width: 100%;
+.header__logo-img {
+  height: 105px;
+  width: 148px;
 }
 
 .address {
